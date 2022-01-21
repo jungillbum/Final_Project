@@ -11292,9 +11292,9 @@ textarea.form-control-lg {
   background-position: center;
   background-size: cover;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 320px) {
   iframe{
-    height: 20em;
+    height: 30em;
   }
   .card{
     width: 100%;
