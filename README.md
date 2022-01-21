@@ -1,2 +1,2 @@
-# JWL-SQUAT
+# SQUAT
 SQAUT Trainer
