@@ -1,2 +1,2 @@
-# Final_Project
-YW project final
+# JWL-SQUAT
+SQAUT Trainer
