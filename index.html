@@ -46,32 +46,29 @@
     <div class="container px-4 px-lg-5">
         <!-- Heading Row-->
         <div class="row">
-
+            <table id="tbl1" style=height:auto>
+                <div class="card">
+                    <iframe src="https://www.youtube.com/embed/Fk9j6pQ6ej8?autoplay=1&origin=http://example.com" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="card-body">
+                    </div>
+                </div>
+            </table>
+            <br>
             <h1 class="text-white fs-3 fw-bolder text-center">동영상을 따라해 보세요</h1>
             <p class="text-white fw-bolder text-center"> 주의 사항!</p>
             <li class="text-white fw-bolder text-center"> 옆 모습이 화면에 나오도록 적당히 떨어져서 스쿼트를 하세요.</li>
             <li class="text-white fw-bolder text-center"> 제대로 스쿼트를 해야지만 카운트가 올라갑니다. </li>
-            <div style="width:50%;float:left;">
-                <table id="tbl1">
-                    <div class="col align-items-center my-5">
-                        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" id="ytplayer" type="text/html" src="https://www.youtube.com/embed/Fk9j6pQ6ej8?autoplay=1&origin=http://example.com" frameborder="0" width="100%" height="315"></iframe>
-                </table>
-            </div>
-            <div style="width:50%;floath:right;">
                 <table id="tbl2">
                     <div class="row-lg-5">
                         <button type="button" onclick="init()">START!</button>
                         <button onClick="window.location.reload()">STOP!</button>
                     </div>
-                    <div><canvas id="canvas"></canvas></div>
+                    <<div class="card"><canvas id="canvas"></canvas></div>
                 </table>
-            </div>
         </div>
     </div>
-
-    </div>
     <!-- Call to Action-->
-    <div style="width:80%;margin:auto;">
+    <div style="width:80%;margin:auto">
         <table id="tbl3">
             <div class="card text-white bg-secondary my-5 py-4 text-center">
                 <div class="card-body" style="font-style: italic; font-weight: bold;">
@@ -140,8 +137,8 @@
             maxPredictions = model.getTotalClasses();
 
             // Convenience function to setup a webcam
-            size = 600;
-            height = 337.5;
+            size = 1200
+            height = 630
             const flip = true; // whether to flip the webcam
             webcam = new tmPose.Webcam(size, height, flip); // width, height, flip
             await webcam.setup(); // request access to the webcam
